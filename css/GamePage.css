@@ -1,0 +1,61 @@
+*{
+    padding:0;
+    margin:0;
+    user-select: none;
+
+}
+#GameBody{
+    width: 90%;
+    height: 60%;
+    margin:1% 5%;
+    border:black 2px solid;
+    background-image: url(../images/background4.jpg);
+    background-repeat: no-repeat;
+
+}
+.progress {
+    position: absolute;
+    top:3%;
+    right: 2%;
+    height: 7%;
+    width: 18%;
+    background-color: red;
+
+}
+
+#timer{
+    float:right;
+    margin-top: 2%;
+    margin-right: 12px;
+    font: bold 25px tahoma;
+    color: #e0b61ef7;
+}
+
+#score,#level,#preScore,#userName{
+    position: absolute;
+    top:80%;
+    font: bold 20px monospace;
+    color: #e0b61ef7;
+    /* color: #1d7917d6; */
+    background-color: bisque;
+
+}
+#score{
+    left:76%;
+
+}
+#level{
+    margin-left: 9%;    
+}
+#preScore{
+    top:3%;
+    margin-left: 9%;
+}
+#userName{
+    margin-left: 35%;
+}
+
+
+
+
+

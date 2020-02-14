@@ -1,0 +1,126 @@
+<!--  Home Page  -> Mohammed Abdallah            -->
+<!-- about us & How to play -> Ahmed Hazem -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="images/aim.png"/>
+  <style>
+    body {
+      overflow-x: hidden;
+      overflow-y: hidden;
+
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="container text-center">
+      <h1> Duck Game </h1>
+      <form method="GET" action="play.html" class="needs-validation" novalidate>
+        <div class="form-row justify-content-center">
+          <div class="col-4 mb-3 mt-5">
+            <div class="input-group">
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+                placeholder="Enter Your Name" required>
+              <div class="invalid-feedback" style="font-size: 23px;">
+                Please Enter a player name.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="custom-control custom-radio">
+          <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" value="1"
+            required>
+          <label class="custom-control-label" for="customControlValidation2"
+            style="font-size: 21px;font-weight: bold;">Level(1)</label>
+        </div>
+        <div class="custom-control custom-radio mb-3">
+          <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" value="2"
+            required>
+          <label class="custom-control-label" for="customControlValidation3"
+            style="font-size: 21px;font-weight: bold;">Level(2)</label>
+
+        </div>
+        <button class="btn btn-primary" id="start" type="submit">Start <span class="fa fa-play fa-1x"></span></button>
+      </form>
+      
+        <button class="btn btn-primary addations" data-toggle="modal" data-target="#mymodal">About us <span class="fa fa-phone fa-1x"></span></button>
+        <button class="btn btn-primary addations" data-toggle="modal" data-target="#mymodal1">How To Play <span class="fa fa-info-circle fa-1x"></span> </button>
+     
+
+      
+    </div>
+  </section>
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/storage.js"></script>
+  <script>
+    // Mohammed Abdallah
+    (function () { //Validation of Form 
+      'use strict';
+      window.addEventListener('load', function () {
+        var forms = document.getElementsByClassName('needs-validation');
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+
+ <!-- end -->
+<!-- aboutus and How to play -> Ahmed Hazem -->
+ <div class="modal" id="mymodal" data-backdrop="static" tabindex="-1" keyboard="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p class="h1 modal-title">JavaScript Project Team </p><span data-dismiss="modal" class="close">&times;</span>
+      </div>
+      <div class="modal-body text-center">
+        <p class="h3"> Amira Reda</p>
+        <br>
+        <p class="h3"> Mohamed Abdallah</p>
+        <br>
+        <p class="h3"> Ahmed Hazem</p>
+
+      </div>
+      <div class="modal-footer">
+        <p>CopyRights &copy; Reserved to game team #1</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--  -->
+<div class="modal" id="mymodal1" data-backdrop="static" tabindex="-1" keyboard="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p class=" h1 modal-title">How To Play Our Game</p> <span data-dismiss="modal" class="close">&times;</span>
+      </div>
+      <div class="modal-body text-center" style="scroll-behavior: auto;">
+        <p class="h6">
+       Hello, Game Features:you will play with time <br><span style="color:brown;font-weight: 700;">(5 minutes ) 2 levels   </span><br><span style="color:brown;font-weight: 700;">first level:</span> only kill the bird and achieve 150 points to your score.
+                    <br><span style="color:brown;font-weight: 700;">second level: </span>inside birds there bombs exist and when you click on the bomb you will kill surroundings birds and change your score.
+          <br>every time you enter to play <span style="color:red;font-weight: 700;">you will show your previous score in the last time you played.
+          </span> </p>
+          <p class="h1">EnJoY :)</p>
+      </div>
+      <div class="modal-footer">
+        <p>CopyRights &copy; Reserved to game team #1</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
