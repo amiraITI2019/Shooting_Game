@@ -1,6 +1,9 @@
 # Shooting_Game
-
- Hello, Game Features:
+Team Members:
+- Mohammed Abdullah                           - Ahmed Hazem
+                       - Amira Reda
+How to play?
+Hello, Game Features:
 you will play with time :(5 minutes ) 2 levels   
 first level:
 only kill the bird and achieve 150 points to your score.
