@@ -42,8 +42,12 @@ $(function () {
             }, 3000);
 
         }
-
+    //background sound -> Ahmed Hazem
+    back = new Audio('sounds/background.mp3');
+    back.play();
+    back.loop = true;
     });
+
 
 });
 
@@ -317,4 +321,4 @@ function checkType(source) {
     }
     changeScore(valueAdded); //go to changescore 
 }
-// Thank u 
+// Thank u
